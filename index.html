@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey's</title>
+    <link rel="icon" href="./Images/hockey-feb-icon.png">
+
+
+    <!-- tailwind + DaisyUI link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind customize color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',  
+               // colorprimary: '#FF4240',  // change the name → ‘color-primary’: red; → use the class name in the tag//
+              }
+            }
+          }
+        }
+      </script>
+
+      <!-- Google font Manrope -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- customize CSS Styles-->
+    <style>
+      .primary-color-orange{
+        background: #FF4240;
+      }
+      .font-manrope{
+        font-family: 'Manrope', sans-serif;
+      }
+
+    </style>
+
+</head>
+
+<body class="font-family">
+
+<header class="container mx-auto">
+
+  <nav class="lg:py-5">          
+    <!-- navbar starts here -->
+     <div class="navbar">
+        <div class="navbar-start">
+  
+          <!-- Burger menu starts -->
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li> 
+              <li><a>Blog</a></li>          
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <!-- Burger menu Ends -->
+
+          <a class="btn btn-ghost text-3xl">Hockey<span class="text-red-700">'</span>s</a>
+        </div>
+  
+        <!-- navbar links starts -->
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal text-[#424247] px-1">
+            <li><a class=" hover:text-red-700">Home</a></li>
+            <li><a class=" hover:text-red-700">About</a></li>
+            <li><a class=" hover:text-red-700">Pages</a></li> 
+            <li><a class=" hover:text-red-700">Blog</a></li>          
+            <li><a class=" hover:text-red-700">Contact</a></li>
+          </ul>
+        </div>
+        <!-- navbar links Ends -->
+  
+        <div class="navbar-end">
+          <a class="btn w-34 primary-color-orange text-white font-bold">Get Ticket</a>
+
+        </div>
+      </div>
+      <!-- navbar ends here -->
+
+  </nav> 
+
+  <div class="">
+     <!-- carousel/ slider starts here -->
+     <div class="carousel w-full lg:h-[550px] relative">
+
+    <!-- Slide1 -->
+    <div id="slide1" class="carousel-item relative w-full">
+      <img src="./Images/Hockey slider1.png" class="w-full" />
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-4 bottom-4 space-x-5">
+        <a href="#slide4" class="btn btn-circle  text-white bg-black border-none">❮</a> 
+        <a href="#slide2" class="btn btn-circle  text-white bg-black border-none">❯</a>
+      </div>
+    </div> 
+
+    <!-- slide2 -->
+    <div id="slide2" class="carousel-item relative w-full">
+      <img src="./Images/hockey-slider2-unsplash.jpg" class="w-full" />
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-4 bottom-4 space-x-5">
+        <a href="#slide1" class="btn btn-circle  text-white bg-black border-none">❮</a> 
+        <a href="#slide3" class="btn btn-circle  text-white bg-black border-none">❯</a>
+      </div>
+    </div> 
+
+    <!-- slide3 -->
+    <div id="slide3" class="carousel-item relative w-full">
+      <img src="./Images/Hockey-slider3-unsplash.jpg" class="w-full" />
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-4 bottom-4 space-x-5">
+        <a href="#slide2" class="btn btn-circle  text-white bg-black border-none">❮</a> 
+        <a href="#slide1" class="btn btn-circle  text-white bg-black border-none">❯</a>
+      </div>
+    </div> 
+   
+     </div>
+     <!-- Carousel Ends here -->
+
+     <!-- Badge starts here -->
+     <div class="h-[20vh] w-full lg:w-2/5 bg-black absolute rounded-xl lg:transform lg:right-20 lg:-bottom-24 px-4 lg:py-4">
+        <h4 class="text-white text-xl font-bold">Meet all the heroes from the field</h4>
+        <p class="text-white font-light text-2">Hockey hero, skilled and relentless, dominates the ice with precision.</p>
+     </div>
+     <!-- Badge Ends here -->
+    </div>
+</header> 
+
+<main class="container mx-auto">
+
+  <!-- Professional hockey club section -->
+  <section class="pt-40 lg:pt-0">
+    <hr class="border-dotted border-t-2 my-10">  <!--Horizontal dotted line-->
+    <div class="w-full lg:w-3/5 mx-auto sm:my-auto">
+      <h3 class="text-center text-3xl font-extrabold">Professional Hockeys Club</h3>
+      <p class="text-center py-10 text-[rgba(19, 19, 24, 0.60)]">Welcome to our prestigious hockey club, where passion meets excellence. Join us on the thrilling journey to hockey greatness.</p>
+    </div>
+    <hr class="border-dotted border-t-2">
+
+    <!-- Radical progress -->
+    <div class="grid grid-cols-1 space-y-5 lg:space-y-0 lg:grid-cols-4 justify-center flex-1 lg:space-x-10 py-10 w-4/5 lg:w-full mx-auto">
+      <div>
+        <div class="radial-progress text-red-600 ml-28 lg:ml-20" style="--value:70;" role="progressbar"><span class="text-black">87%</span></div>
+        <h3 class="text-lg text-center font-semibold py-4">Prayer Facility</h3>
+        <p>We have very good prayer facility. We have three different rooms for different riligion.</p>
+      </div>
+
+      <div>
+        <div class="radial-progress text-green-400 ml-28 lg:ml-20" style="--value:70;" role="progressbar"><span class="text-black">95%</span></div>
+        <h3 class="text-lg text-center font-semibold py-4">Experienced Coach</h3>
+        <p>We have a very renouned and experienced coach. He is avery dedicated and hardworking coach.</p>
+      </div>
+
+      <div>
+        <div class="radial-progress text-yellow-700 ml-28 lg:ml-20" style="--value:70;" role="progressbar"><span class="text-black">95%</span></div>
+        <h3 class="text-lg text-center font-semibold py-4">Senior player</h3>
+        <p>Ninety percent of our players are very experienced.</p>
+      </div>
+
+      <div>
+        <div class="radial-progress text-blue-700 ml-28 lg:ml-20" style="--value:70;" role="progressbar"><span class="text-black">80%</span></div>
+        <h3 class="text-lg text-center font-semibold py-4">Training Ground</h3>
+        <p>We have a big training ground with all facilities.</p>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+</body>
+</html>
+
