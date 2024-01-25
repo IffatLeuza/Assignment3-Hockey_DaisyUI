@@ -11,20 +11,6 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- tailwind customize color -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',  
-               // colorprimary: '#FF4240',  // change the name → ‘color-primary’: red; → use the class name in the tag//
-              }
-            }
-          }
-        }
-      </script>
-
       <!-- Google font Manrope -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,13 +32,90 @@
 <body class="font-family">
   <main class="container mx-auto">
 
-    <section>
-     
+    <section class="container mx-auto">
+
+          <div>
+            <hr class="border-dotted border-t-2 m-10">  <!--Horizontal dotted line-->
+
+            <div class="mx-2">
+              <h3 class="text-center text-3xl font-extrabold py-2">Get in touch section</h3>
+              <p class="text-center lg:py-5 text-[rgba(19, 19, 24, 0.60)] lg:mx-20 lg:px-32 text-wrap">Feel free to reach out with any inquiries or collaborations. We value your feedback and look forward to connecting. Your communication is important to us.</p>
+            </div>
+
+            <hr class="border-dotted border-t-2 m-10 mb-5">
+          </div>
+
+
+          <div class="grid grid-cols-1 lg:grid-cols-3">
+            
+              <div class="space-y-5 p-2 lg:p-10 text-black border-[1px] border-gray-500 lg:m-5 rounded-2xl col-span-1">
+                <div class="rounded-2xl p-5 bg-[#BCED6D1A]">
+                  <img src="./Images/Call.png" alt="">
+                  <h4>Phone Number:</h4>
+                  <p>(+65) 97237409</p>
+                </div>
+      
+                <div class="rounded-2xl p-5 bg-[#FDDD5F1A]">
+                  <img src="./Images/mail.png" alt="">
+                  <h4>Email:</h4>
+                  <p>hockeys@support.com</p>
+                </div>
+      
+                <div class="rounded-2xl p-5 bg-[#629CF31A]">
+                  <img src="./Images/map.png" alt="">
+                  <h4>Location:</h4>
+                  <p>Kovan, Singapore</p>
+                </div>
+      
+              </div>
+            
+
+              <div class="p-5 col-span-2 mx-full h-full">
+              <form action="#">
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+
+                  <div>
+                    <p class="text-black font-bold text-lg">Your Name:</p>
+                    <input type="text" placeholder=" Enter your full name" class="w-full rounded-lg bg-[#13131808] p-2">
+                  </div>
+                  <div>
+                    <p class="text-black font-bold text-lg">Your Email:</p>
+                    <input type="text" placeholder=" Enter your email" class="w-full rounded-lg bg-[#13131808] p-2">
+                  </div>
+                  <div>
+                    <p class="text-black font-bold text-lg">Subject:</p>
+                    <input type="text" placeholder=" Enter your subject" class="w-full rounded-lg bg-[#13131808] p-2">
+                  </div>
+                  <div>
+                    <p class="text-black font-bold text-lg">Phone Number:</p>
+                    <input type="tel" placeholder=" Enter your phone number" class="w-full rounded-lg bg-[#13131808] p-2">
+                  </div>
+
+                </div>
+
+                <div class="mx-full space-y-5 pt-2">
+                    <p class="text-black font-bold text-lg">Message:</p>
+                    <input type="text" placeholder="     Enter your full message" class="col-span-2 rounded-lg bg-[#13131808] h-44 w-full p-2">
+                    <br>
+
+                    <button type="submit" class="btn-wide w-full rounded-lg text-white p-4 bg-red-500">Send Message</button>
+                </div>
+
+            
+                  
+                
+
+              </form>
+              </div>
+    
+          </div>
+      
 
     </section>
 
-  </main>
    
+  </main>
 
 </body>
 </html>
